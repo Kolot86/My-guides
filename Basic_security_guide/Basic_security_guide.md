@@ -10,7 +10,7 @@ This guide is for complete beginners  and it’s just my adaptation of guide fro
 
 Feel free to use original. 
 
-First, we begin to learn about SSH, or secure shell, it is an encrypted protocol, used to administer and communicate with servers. On our server vi going to use Ubuntu 20.04 for installation.
+First, we begin to learn about SSH, or secure shell. It is an encrypted protocol, used to administer and communicate with servers. On our server vi going to use Ubuntu 20.04 for installation.
 
 The first step is to create a key pair on your privet computer. To do this you can use command line interference like PowerShell for Window in my case:
 ```bash
