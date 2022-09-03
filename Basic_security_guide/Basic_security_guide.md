@@ -86,7 +86,7 @@ chmod -R go= ~/.ssh
 ```
 You can also copy the public ssh key from the local machine to the remote server using the following command:
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub root@your_remote_host_IP
+ssh-copy-id -i ~/.ssh/authorized_keys root@your_remote_host_IP
 ```
 
 Now you can connect to your server with ssh keys
