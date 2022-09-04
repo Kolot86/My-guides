@@ -96,7 +96,7 @@ ECDSA key fingerprint is SHA256:QNrtYP0m1bA0DiD39aS8CNl8mc+6VyG4JaIEHWirpLc.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? y
 Please type 'yes', 'no' or the fingerprint:
 ```
-Pay attention also, that I have used test server to login and IP not exist anymore. Make some habit, not showing your IP to public. 
+(Pay attention also, that I have used test server to login and IP not exist anymore. Make some habit, not showing your IP to public.) 
 
 Type yes and then press ENTER to continue
 
