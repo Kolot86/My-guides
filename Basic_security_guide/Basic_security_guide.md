@@ -52,7 +52,7 @@ The key's randomart image is:
 |     ..    o+    |
 +----[SHA256]-----+
 ```
-You now have a public and private key that you can use for authentication. The next step is to place the public key on your server and begin to use SSH-key-based authentication to log in.
+You now have a public and private key that you can use for authentication. The next step is to place the public key on your server and begin to use SSH-key-based authentication to login.
 ## Copying the Public Key to Your Ubuntu Server
 We going to copy public key manually to our ubuntu server.
 
