@@ -99,6 +99,7 @@ Please type 'yes', 'no' or the fingerprint:
 Pay attention also, that I have used test server to login and IP not exist anymore. Make some habit, not showing your IP to public. 
 
 Type yes and then press ENTER to continue
+
 If you did not supply a passphrase for your private key, you will be logged in immediately. If you supplied a passphrase for the private key when you created the key, you will be prompted to enter it now. After authenticating, a new shell session should open for you with the configured account on the Ubuntu server.
 Now you can login using you ssh keys and switch off password  authentication 
 
