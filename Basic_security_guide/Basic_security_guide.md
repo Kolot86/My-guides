@@ -22,7 +22,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/your_home/.ssh/id_rsa):
 ```
 Press enter to save the key pair into the .ssh/ subdirectory in your home directory, or specify an alternate path.
-You should then see the following prompt:
+You should see the following prompt:
 ```bash
 Enter passphrase (empty for no passphrase):
 ```
