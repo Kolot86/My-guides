@@ -155,7 +155,7 @@ If everything works well, we can connect again to our server as root users, swit
 
 ## Switch off password authentication and deny root login 
 
-Login to you server check if everything works good, that you can connect as root and ass user, with ssh keys to your server. If ok, do next step. Open your ssh config and switch off PasswordAuthentication and root logging
+Login to you server check if everything works good, that you can connect as root and ass user, with ssh keys to your server. If ok, do next step. Open your ssh config and switch off PasswordAuthentication and root user login.
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
