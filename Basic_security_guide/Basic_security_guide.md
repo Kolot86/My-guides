@@ -97,7 +97,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? y
 Please type 'yes', 'no' or the fingerprint:
 ```
 Type yes and then press ENTER to continue
-If you did not supply a passphrase for your private key, you will be logged in immediately. If you supplied a passphrase for the private key when you created the key, you will be prompted to enter it now. After authenticating, a new shell session should open for you with the configured account on the Ubuntu server.
+If you did not supply a passphrase for your private key, you will be logged in immediately. If you supplied a passphrase for the private key, you will be prompted to enter it now. After authenticating, a new shell session should open for you with the configured account on the Ubuntu server.
 Now you can login using you ssh keys and switch off password  authentication 
 
 But we going to create non root user also 
