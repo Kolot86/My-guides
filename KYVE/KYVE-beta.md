@@ -55,8 +55,10 @@ mv genesis-v0.7.0-beta.json ~/.kyve/config/genesis.json
 ```
 ```bash
 wget https://github.com/KYVENetwork/chain/releases/download/v0.0.1/cosmovisor_linux_amd64 && \
-mv cosmovisor_linux_amd64 cosmovisor && \
-chmod +x cosmovisor
+mv cosmovisor_linux_amd64 cosmovisor 
+```
+```bash
+chmod +x cosmovisor && mv ./cosmovisor /usr/local/bin/cosmovisor
 ```
 ```bash
 mkdir -p ~/.kyve/cosmovisor/genesis/bin/ && \
