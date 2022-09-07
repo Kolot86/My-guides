@@ -18,7 +18,7 @@ if ! [ -x "$(command -v go)" ]; then
 fi
 ```
 ```bash
-NODENAME=Kolot
+NODENAME=Du_not_copypast
 ```
 ```bash
 KYVE_PORT=49
@@ -112,43 +112,8 @@ Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=true"
 WantedBy=multi-user.target
 EOF
 ```
-```bash
-sudo tee /etc/systemd/system/kyved.service > /dev/null <<EOF  
-[Unit]
-Description=Fire_starter
-After=network-online.target
-[Service]
-User=$USER
-ExecStart=$(which cosmovisor) start
-Restart=on-failure
-RestartSec=12
-LimitNOFILE=65535
-Environment="DAEMON_HOME=$HOME/.kyve"
-Environment="DAEMON_NAME=chaind"
-Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=true"
-Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
-Environment="UNSAFE_SKIP_BACKUP=true"
-[Install]
-WantedBy=multi-user.target
-EOF
-```
-```bash
-sudo tee /etc/systemd/system/kyved.service > /dev/null <<EOF
-[Unit]
-Description=KYVE
-After=network-online.target
 
-[Service]
-User=$USER
-ExecStart=$(which chaind) start --home $HOME/.kyve
-Restart=on-failure
-RestartSec=3
-LimitNOFILE=65535
 
-[Install]
-WantedBy=multi-user.target
-EOF
-```
 
 ```bash
 sudo systemctl daemon-reload
