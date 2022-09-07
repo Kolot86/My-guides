@@ -159,6 +159,8 @@ sudo systemctl enable kyved
 sudo systemctl restart kyved && sudo journalctl -u kyved -f -o cat
 ```
 
+## Validator stuff, in process
+
 ```bash
 chaind keys add $WALLET
 ```
