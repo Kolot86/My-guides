@@ -200,7 +200,7 @@ chaind tx staking create-validator \
   ```
   ### Commands
   ```bash
-  journalctl -fu kyved -o cat
+  sudo journalctl -fu kyved -o cat
   ```
   ```bash
   sudo systemctl restart kyved
