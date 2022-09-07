@@ -130,7 +130,7 @@ chaind tendermint unsafe-reset-all --home $HOME/.kyve
 # Service
 
 ```bash
-tee <<EOF > /dev/null /etc/systemd/system/kyved.service
+sudo tee <<EOF > /dev/null /etc/systemd/system/kyved.service
 [Unit]
 Description=Fire-Starter
 After=network-online.target
