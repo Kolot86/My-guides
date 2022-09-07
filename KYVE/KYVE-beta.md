@@ -24,7 +24,7 @@ fi
 ```bash
 NODENAME=Du_not_copypast
 ```
-## Chose your port if you whant. Ahoy!
+## Make your custom ports. You can change this two numbers 
 ```bash
 KYVE_PORT=26
 ```
