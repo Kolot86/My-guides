@@ -208,7 +208,7 @@ chaind tx staking create-validator \
   ```bash
   sudo systemctl stop kyved
   ```
-  # Delite 
+  # Delete 
 ```bash
 sudo systemctl stop kyved
 sudo systemctl disable kyved
