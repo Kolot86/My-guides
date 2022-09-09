@@ -208,6 +208,10 @@ chaind tx staking create-validator \
   ```bash
   sudo systemctl stop kyved
   ```
+  Unjail
+  ```bash
+  chaind tx slashing unjail --from $WALLET --chain-id $KYVE_CHAIN_ID --gas=auto 
+  ``` 
   # Delete 
 ```bash
 sudo systemctl stop kyved
