@@ -24,7 +24,7 @@ fi
 ```bash
 NODENAME=Du_not_copypast
 ```
-## Make your custom ports. You can change this two numbers 
+## Make your custom ports. You can chose from 10 to 65
 ```bash
 KYVE_PORT=26
 ```
@@ -198,6 +198,10 @@ chaind tx staking create-validator \
   --moniker $NODENAME \
   --chain-id $KYVE_CHAIN_ID
   ```
+  ## Peer list
+   ```bash
+  curl -sS http://localhost:${KYVE_PORT}657/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}'
+   ```
   ### Commands
   ```bash
   sudo journalctl -fu kyved -o cat
