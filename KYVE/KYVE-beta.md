@@ -188,7 +188,7 @@ chaind query bank balances $KYVE_WALLET_ADDRESS
 ```
 ```bash
 chaind tx staking create-validator \
-  --amount 1000000000000000000tkyve \
+  --amount 1000000000tkyve \
   --from $WALLET \
   --commission-max-change-rate "0.01" \
   --commission-max-rate "0.2" \
@@ -197,6 +197,16 @@ chaind tx staking create-validator \
   --pubkey  $(chaind tendermint show-validator) \
   --moniker $NODENAME \
   --chain-id $KYVE_CHAIN_ID
+  ```
+  ## Edit validator
+  ```bash
+  chaind tx staking edit-validator \
+  --moniker=$NODENAME \
+  --identity=<your_keybase_id> \
+  --website="<your_website>" \
+  --details="<your_validator_description>" \
+  --chain-id=$KYVE_CHAIN_ID \
+  --from=$WALLET
   ```
   ## Peer list
    ```bash
