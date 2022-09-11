@@ -225,7 +225,10 @@ chaind tx staking create-validator \
   Unjail
   ```bash
   chaind tx slashing unjail --from $WALLET --chain-id $KYVE_CHAIN_ID --gas=auto 
-  ``` 
+  ```
+  ```bash
+  chaind tx staking delegate $KYVE_VALOPER_ADDRESS 1000000000000tkyve --from=$WALLET --chain-id=$KYVE_CHAIN_ID --gas=auto --fees 5000tkyve 
+  ```
   # Delete 
 ```bash
 sudo systemctl stop kyved
