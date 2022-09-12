@@ -6,7 +6,7 @@ Hello,
 
 This is a basic security guide that every beginner validator should know and use as their first layer of security.
 
-This guide is for complete beginners  and it’s just my adaptation of the guide from digital ocean, with a little extra info from me https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04#step-3-authenticating-to-your-ubuntu-server-using-ssh-keys
+This guide is for complete beginners  and it’s just my adaptation of the guide from digital ocean, with a little extra info from me. https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04#step-3-authenticating-to-your-ubuntu-server-using-ssh-keys
 
 Feel free to use the original. 
 
