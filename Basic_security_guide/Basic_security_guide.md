@@ -90,14 +90,11 @@ Once you have access to your account on the remote server, you should make sure 
 mkdir -p ~/.ssh
 ```
 
-Now, you can create or modify the authorized_keys file within this directory. Copy data from id_rsa.pub with this command:
+Now, you can create or modify the authorized_keys file within this directory. You can add the contents of your id_rsa.pub file to the end of the authorized_keys file, creating it if necessary, using this command:
 
 ```bash
-nano ~/.ssh/authorized_keys
+echo output_of_id_rsa.pub_goes_here >> ~/.ssh/authorized_keys
 ```
-
-Press "crl + o" to save and enter. To close "ctrl + x"
-You can also upload the whole file with MobaXterm.
 
 Finally, we’ll ensure that the ~/.ssh directory and authorized_keys file have the appropriate permissions set:
 
