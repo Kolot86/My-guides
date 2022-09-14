@@ -97,7 +97,7 @@ You can add the contents of your id_rsa.pub file, in the authorized_keys file an
 ```bash
 echo output_of_id_rsa.pub_goes_here >> ~/.ssh/authorized_keys
 ```
-In the above command, substitute the "output_of_id_rsa.pub_goes_here" with the output from the cat ~/.ssh/id_rsa.pub command that you executed on your local system. It should start with ssh-rsa AAAA....
+In the above command, substitute the "output_of_id_rsa.pub_goes_here" with the output from the "cat ~/.ssh/id_rsa.pub" command that you executed on your local system. It should start with ssh-rsa AAAA....
 
 Example: 
 
