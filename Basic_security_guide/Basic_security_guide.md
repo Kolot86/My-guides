@@ -95,6 +95,8 @@ Now, you can create or modify the authorized_keys file within this directory. Yo
 ```bash
 echo output_of_id_rsa.pub_goes_here >> ~/.ssh/authorized_keys
 ```
+In the above command, substitute the "output_of_id_rsa.pub_goes_here" with the output from the cat ~/.ssh/id_rsa.pub command that you executed on your local system. It should start with ssh-rsa AAAA....
+
 
 Finally, we’ll ensure that the ~/.ssh directory and authorized_keys file have the appropriate permissions set:
 
