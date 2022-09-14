@@ -97,6 +97,11 @@ echo output_of_id_rsa.pub_goes_here >> ~/.ssh/authorized_keys
 ```
 In the above command, substitute the "output_of_id_rsa.pub_goes_here" with the output from the cat ~/.ssh/id_rsa.pub command that you executed on your local system. It should start with ssh-rsa AAAA....
 
+Example: 
+
+```bash
+echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC+Z4Q0Ibukn8bxp6YwXWnUTo6eCaCf2mnARawC95sD+9vhPkhvYC7+YoSkbMa4g6xxt8mssGGK738peGc4BiPu6iSzcpTAF1pAkQqTHdbokP6Bl5WAf53LuH/NS45P4UyNK4XIMyeEHTCuMlSB351n4niC9K/g0Wk+7yoNSbT71oDE+SWdnMq7cW3ofP/l8QTj/ijL3gCScnfwDKZTCvubxue6hOEabdQZnrFW4avxLr9DNEkzbrcX7AWSE6hLjldjm4scqEOgGec64DEJips6Dho0EUDL4W4+onq0NtNopYik8m+AURY0oTmcCGjoTVHcoiQqFAoMT0fXhHaZBC8h4KEu21/MI68Ch+PsZr/KVc4+tvRDhqdQ5EpszYC2LB/497fatrwADy9M0cLp6DCetPXwXj8UFaFp/XmYb/s1XQCg6f9y+IPtYR8jz30t1g4oNAtfy7EJziD/vCkiR8MseSTQhc0MMAlgWbHB8LScktpjrUWGen9ZRz7F5KPlnls= asus@DESKTOP-SIB6BG6 >> ~/.ssh/authorized_key
+```
 
 Finally, we’ll ensure that the ~/.ssh directory and authorized_keys file have the appropriate permissions set:
 
