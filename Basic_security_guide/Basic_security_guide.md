@@ -90,7 +90,9 @@ Once you have access to your account on the remote server, you should make sure 
 mkdir -p ~/.ssh
 ```
 
-Now, you can create or modify the authorized_keys file within this directory. You can add the contents of your id_rsa.pub file to the end of the authorized_keys file, creating it if necessary, using this command:
+Now, you can create or modify the authorized_keys file within this directory. 
+
+You can add the contents of your id_rsa.pub file, in the authorized_keys file and create it if necessary using this command:
 
 ```bash
 echo output_of_id_rsa.pub_goes_here >> ~/.ssh/authorized_keys
