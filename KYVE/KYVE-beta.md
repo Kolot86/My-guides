@@ -208,6 +208,10 @@ chaind tx staking create-validator \
   --chain-id=$KYVE_CHAIN_ID \
   --from=$WALLET
   ```
+  ## Rewards
+  ```bash
+  chaind tx distribution withdraw-rewards $KYVE_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$KYVE_CHAIN_ID
+  ```
   ## Peer list
    ```bash
   curl -sS http://localhost:${KYVE_PORT}657/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}'
