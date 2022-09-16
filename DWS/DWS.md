@@ -68,7 +68,7 @@ dewebd init $NODENAME --chain-id $DWS_CHAIN_ID
 
 ```bash
 SEEDS=""
-PEERS="b75df8fd5245235b5deb66f30afb395fec45e3fb@185.9.144.138:26656"; \
+PEERS=""; \
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.deweb/config/config.toml
 ```
 ## Genesis
@@ -189,11 +189,11 @@ dewebd query bank balances $DWS_WALLET_ADDRESS
 ```
 ```bash
 dewebd tx staking create-validator \
-  --amount 1000000000tkyve \
+  --amount 1000000000udws \
   --from $WALLET \
-  --commission-max-change-rate "0.01" \
-  --commission-max-rate "0.2" \
-  --commission-rate "0.07" \
+  --commission-max-change-rate "0.1" \
+  --commission-max-rate "0.3" \
+  --commission-rate "0.08" \
   --min-self-delegation "1" \
   --pubkey  $(dewebd tendermint show-validator) \
   --moniker $NODENAME \
