@@ -214,7 +214,7 @@ dewebd tx staking create-validator \
   --website="<your_website>" \
   --details="<your_validator_description>" \
   --chain-id=$DWS_CHAIN_ID \
-  --from=$WALLET
+  --from=$WALLET --fees 250udws
   ```
   ## Domain
   ```bash
