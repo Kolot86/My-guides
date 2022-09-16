@@ -20,9 +20,9 @@ if ! [ -x "$(command -v go)" ]; then
   source ~/.bash_profile
 fi
 ```
-## Moniker, whrite some name
+## Moniker, whrite something cool
 ```bash
-NODENAME=Kolot
+NODENAME=Do_not_copypaste
 ```
 ## Make your custom ports. You can chose from 10 to 65
 ```bash
