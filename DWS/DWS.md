@@ -167,7 +167,7 @@ sudo systemctl enable dewebd
 sudo systemctl restart dewebd && sudo journalctl -u dewebd -f -o cat
 ```
 
-## Validator stuff, in process
+# Validator stuff, in process
 
 ```bash
 dewebd keys add $WALLET
@@ -178,6 +178,7 @@ dewebd keys add $WALLET --recover
 ```bash
 dewebd keys list
 ```
+## Load variables into the system
 ```bash
 DWS_WALLET_ADDRESS=$(dewebd keys show $WALLET -a)
 ```
@@ -191,6 +192,7 @@ DWS_VALOPER_ADDRESS=$(dewebd keys show $WALLET --bech val -a)
 echo 'export DWS_VALOPER_ADDRESS='${DWS_VALOPER_ADDRESS} >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
+## Check balance
 ```bash
 dewebd query bank balances $DWS_WALLET_ADDRESS
 ```
