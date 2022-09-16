@@ -168,6 +168,7 @@ sudo systemctl restart dewebd && sudo journalctl -u dewebd -f -o cat
 ```
 
 # Validator stuff, in process
+## Create-restore wallet
 
 ```bash
 dewebd keys add $WALLET
