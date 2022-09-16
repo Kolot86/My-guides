@@ -42,7 +42,6 @@ source $HOME/.bash_profile
 ## Binaries
 
 ```bash
-cd $HOME
 git clone https://github.com/deweb-services/deweb.git
 cd deweb
 git checkout v0.3.1
