@@ -95,9 +95,6 @@ sudo chmod +x cosmovisor
 sudo mv cosmovisor /usr/local/bin/cosmovisor
 ```
 ```bash
-chmod +x cosmovisor && mv ./cosmovisor /usr/local/bin/cosmovisor
-```
-```bash
 mkdir -p ~/.deweb/cosmovisor/genesis/bin/ && \
 echo "{}" > ~/.deweb/cosmovisor/genesis/upgrade-info.json
 ```
