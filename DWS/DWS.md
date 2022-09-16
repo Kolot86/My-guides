@@ -197,6 +197,7 @@ source $HOME/.bash_profile
 ```bash
 dewebd query bank balances $DWS_WALLET_ADDRESS
 ```
+## Register Validator
 ```bash
 dewebd tx staking create-validator \
   --amount 1000000udws \
