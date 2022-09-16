@@ -230,7 +230,7 @@ dewebd tx staking create-validator \
    ```
    ## Delagate to your validator
    ```bash
-  dewebd tx staking delegate $DWS_VALOPER_ADDRESS 9000000udws --from=$WALLET --chain-id=$DWS_CHAIN_ID --fees 250udws -y
+  dewebd tx staking delegate $DWS_VALOPER_ADDRESS 1000000udws --from=$WALLET --chain-id=$DWS_CHAIN_ID --fees 250udws -y
   ```
   ### Commands
   ```bash
