@@ -45,7 +45,7 @@ source $HOME/.bash_profile
 git clone https://github.com/deweb-services/deweb.git
 cd deweb
 git checkout v0.3.1
-make build   
+make install
 ```
 ## Config app
 
