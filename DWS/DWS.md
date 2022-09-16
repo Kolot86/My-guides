@@ -26,7 +26,7 @@ NODENAME=Do_not_copypaste
 ```
 ## Make your custom ports. You can chose from 10 to 65
 ```bash
-DWS_PORT=13
+DWS_PORT=11
 ```
 ## Save and import variables
 
@@ -68,7 +68,7 @@ dewebd init $NODENAME --chain-id $DWS_CHAIN_ID
 
 ```bash
 SEEDS=""
-PEERS=""; \
+PEERS="2b1aebd0029570c20932bf7a17b3d7e67cbacc52@31.44.6.134:26656"; \
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.deweb/config/config.toml
 ```
 ## Genesis
