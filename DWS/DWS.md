@@ -217,7 +217,9 @@ dewebd tx staking create-validator \
   --from=$WALLET
   ```
   ## Domain
+  ```bash
   dewebd tx domain register DoNotCopypast --data="$BasicData" --from $WALLET --chain-id $DWS_CHAIN_ID --fees 250udws --output json -b block
+  ```
   ## Peer list
    ```bash
   curl -sS http://localhost:${DWS_PORT}657/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}'
