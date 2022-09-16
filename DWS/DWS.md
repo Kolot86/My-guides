@@ -224,7 +224,9 @@ dewebd tx staking create-validator \
    dewebd q staking validators -oj --limit=3000 | jq '.validators[] | select(.status=="BOND_STATUS_BONDED")' | jq -r '(.tokens|tonumber/pow(10; 6)|floor|tostring) + " \t " + .description.moniker' | sort -gr | nl
    ```
    ## Delagate to your validator
+   ```bash
   dewebd tx staking delegate $DWS_VALOPER_ADDRESS 9000000udws --from=$WALLET --chain-id=$DWS_CHAIN_ID --fees 250udws -y
+  ```
   ### Commands
   ```bash
   sudo journalctl -fu dewebd -o cat
