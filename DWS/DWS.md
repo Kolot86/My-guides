@@ -193,7 +193,7 @@ dewebd query bank balances $DWS_WALLET_ADDRESS
 ```
 ```bash
 dewebd tx staking create-validator \
-  --amount 1000000000udws \
+  --amount 1000000udws \
   --from $WALLET \
   --commission-max-change-rate "0.1" \
   --commission-max-rate "0.3" \
@@ -201,7 +201,7 @@ dewebd tx staking create-validator \
   --min-self-delegation "1" \
   --pubkey  $(dewebd tendermint show-validator) \
   --moniker $NODENAME \
-  --chain-id $DWS_CHAIN_ID
+  --chain-id $DWS_CHAIN_ID --fees 250udws
   ```
   ## Edit validator
   ```bash
