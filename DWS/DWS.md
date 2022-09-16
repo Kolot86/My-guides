@@ -85,8 +85,14 @@ curl -s https://raw.githubusercontent.com/deweb-services/deweb/main/genesis.json
 ## Cosmovisor
 
 ```bash
-wget https://github.com/KYVENetwork/chain/releases/download/v0.0.1/cosmovisor_linux_amd64 && \
-mv cosmovisor_linux_amd64 cosmovisor 
+go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v0.1.0 
+```
+```bash 
+cd $HOME/go/bin
+```
+```bash
+sudo chmod +x cosmovisor 
+sudo mv cosmovisor /usr/local/bin/cosmovisor
 ```
 ```bash
 chmod +x cosmovisor && mv ./cosmovisor /usr/local/bin/cosmovisor
