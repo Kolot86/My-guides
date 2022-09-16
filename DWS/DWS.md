@@ -47,9 +47,11 @@ cd deweb
 git checkout v0.3.1
 make install
 ```
+```bash
 cd $HOME/deweb/build 
 chmod +x dewebd 
 mv dewebd /usr/local/bin/
+```
 ## Config app
 
 ```bash
