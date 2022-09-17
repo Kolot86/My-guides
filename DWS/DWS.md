@@ -42,16 +42,14 @@ source $HOME/.bash_profile
 ## Binaries
 
 ```bash
+cd $HOME
 git clone https://github.com/deweb-services/deweb.git
 cd deweb
 git checkout v0.3.1
-make install
+make build
+sudo cp build/dewebd /usr/local/bin/dewebd
 ```
-```bash
-cd $HOME/go/bin
-chmod +x dewebd 
-mv dewebd /usr/local/bin/
-```
+
 ## Config app
 
 ```bash
