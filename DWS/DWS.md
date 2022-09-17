@@ -226,18 +226,18 @@ dewebd tx staking create-validator \
   IP=38.242.157.116
   DOMAIN=kolot.deweb
   ```
-    ```bash
+  ```bash
   echo "export DOMAIN=${DOMAIN}" >> $HOME/.bash_profile  
   echo "export IP=${IP}" >> $HOME/.bash_profile
-source $HOME/.bash_profile
-```
+  source $HOME/.bash_profile
+  ```
   DNS records
-```bash
-  BasicDataEmpty='{}'
+  ```bash
+    BasicDataEmpty='{}'
 BasicData='{"records": [{"type": "A","values": ["${DOMAIN}"]}]}'
 BasicDataWithSubPrice='{"records":[{"type": "A","values":["${DOMAIN}"]}],"sub_domains_sale": true,"sub_domains_sale_price": 100000000000}'
 BasicDataWithMX='{"records": [{"type": "A","values": ["${DOMAIN}"]},{"type": "MX","values": ["mx.${DOMAIN}."]}]}'
-```
+  ```
   ```bash
   echo "export IP=${IP}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
