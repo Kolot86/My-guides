@@ -222,31 +222,8 @@ dewebd tx staking create-validator \
   --from=$WALLET --fees 250udws
   ```
   ## Domain
-  ```bash
-  IP=38.242.157.116
-  DOMAIN=kolot.deweb
-  ```
-  ```bash
-  echo "export DOMAIN=${DOMAIN}" >> $HOME/.bash_profile  
-  echo "export IP=${IP}" >> $HOME/.bash_profile
-  source $HOME/.bash_profile
-  ```
-  DNS records
-  ```bash
-    BasicDataEmpty='{}'
-BasicData='{"records": [{"type": "A","values": ["${DOMAIN}"]}]}'
-BasicDataWithSubPrice='{"records":[{"type": "A","values":["${DOMAIN}"]}],"sub_domains_sale": true,"sub_domains_sale_price": 100000000000}'
-BasicDataWithMX='{"records": [{"type": "A","values": ["${DOMAIN}"]},{"type": "MX","values": ["mx.${DOMAIN}."]}]}'
-  ```
-  ```bash
-  echo "export IP=${IP}" >> $HOME/.bash_profile
-source $HOME/.bash_profile
-```
-
+ 
   
-  ```bash
-  dewebd tx domain register kolot.deweb --data="$BasicData" --from $WALLET --chain-id $DWS_CHAIN_ID --gas 2000000 --fees 2100udws --output json -b block
-  ```
   ## Peer list
    ```bash
   curl -sS http://localhost:${DWS_PORT}657/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}'
