@@ -222,7 +222,9 @@ dewebd tx staking create-validator \
   --from=$WALLET --fees 250udws
   ```
   ## Domain
- 
+ ```bash
+ dewebd tx domain register do-not-copypast --data="$BasicData" --from=$WALLET --chain-id=$DWS_CHAIN_ID --gas 2100000 --fees 2100udws --output json -b block
+ ```
   
   ## Peer list
    ```bash
