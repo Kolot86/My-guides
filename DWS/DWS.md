@@ -232,7 +232,7 @@ dewebd tx staking create-validator \
 source $HOME/.bash_profile
 ```
   DNS records
-  ```bash
+```bash
   BasicDataEmpty='{}'
 BasicData='{"records": [{"type": "A","values": ["${DOMAIN}"]}]}'
 BasicDataWithSubPrice='{"records":[{"type": "A","values":["${DOMAIN}"]}],"sub_domains_sale": true,"sub_domains_sale_price": 100000000000}'
