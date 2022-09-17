@@ -258,8 +258,8 @@ dewebd tx staking create-validator \
 ```bash
 sudo systemctl stop dewebd
 sudo systemctl disable dewebd
-sudo rm /etc/systemd/system/dewebd* -rf
-sudo rm $(which deweb) -rf
+sudo rm /etc/systemd/system/deweb* -rf
+sudo rm $(which dewebd) -rf
 sudo rm $HOME/.deweb* -rf
 sudo rm $HOME/deweb -rf
 sed -i '/DWS_/d' ~/.bash_profile
