@@ -164,7 +164,10 @@ sudo systemctl daemon-reload
 sudo systemctl enable dewebd
 sudo systemctl restart dewebd && sudo journalctl -u dewebd -f -o cat
 ```
-
+## synchronization status
+```bash
+dewebd status 2>&1 | jq .SyncInfo
+```
 # Validator stuff, in process
 ## Create-restore wallet
 
