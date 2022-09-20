@@ -241,7 +241,7 @@ chaind tx staking create-validator \
 sudo systemctl stop kyved
 sudo systemctl disable kyved
 sudo rm /etc/systemd/system/chaind* -rf
-sudo rm $(which kyve) -rf
+sudo rm $(which kyved) -rf
 sudo rm $HOME/.kyve* -rf
 sudo rm $HOME/kyve -rf
 sed -i '/KYVE_/d' ~/.bash_profile
