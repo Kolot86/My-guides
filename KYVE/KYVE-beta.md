@@ -159,6 +159,11 @@ sudo systemctl enable kyved
 sudo systemctl restart kyved && sudo journalctl -u kyved -f -o cat
 ```
 
+## synchronization status
+```bash
+chaind status 2>&1 | jq .SyncInfo
+```
+
 ## Validator stuff, in process
 
 ```bash
