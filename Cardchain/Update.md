@@ -1,10 +1,9 @@
 ```bash
 sudo systemctl stop Cardchain
 cd $HOME && rm -rf Cardchain
-git clone https://github.com/DecentralCardGame/Cardchain && cd Cardchain
-git checkout 4e2c35d094c196733843ca0180c2305652dcaba7
-make build
-sudo mv build/Cardchain $(which Cardchain)
-cp /usr/local/bin/Cardchain $HOME/.Cardchain/cosmovisor/genesis/bin/Cardchain
+wget https://github.com/DecentralCardGame/Cardchain/releases/download/v0.8/Cardchain_v0.8_linux_amd64.tar.gz
+tar -xvzf Cardchain_v0.8_linux_amd64.tar.gz
+curl https://github.com/DecentralCardGame/Cardchain/releases/tag/v0.8| sudo bash
+mv $HOME/Cardchaind $HOME/.Cardchain/cosmovisor/genesis/bin/Cardchain
 sudo systemctl restart Cardchain && journalctl -fu Cardchain -o cat
 ```
