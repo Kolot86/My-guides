@@ -1,6 +1,5 @@
 ```bash
 sudo systemctl stop Cardchain
-cd $HOME && rm -rf Cardchain
 wget https://github.com/DecentralCardGame/Cardchain/releases/download/v0.8/Cardchain_v0.8_linux_amd64.tar.gz
 tar -xvzf Cardchain_v0.8_linux_amd64.tar.gz
 curl https://github.com/DecentralCardGame/Cardchain/releases/tag/v0.8| sudo bash
