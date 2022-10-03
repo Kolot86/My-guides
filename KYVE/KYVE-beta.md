@@ -164,7 +164,8 @@ sudo systemctl restart kyved && sudo journalctl -u kyved -f -o cat
 chaind status 2>&1 | jq .SyncInfo
 ```
 
-## Validator stuff, in process
+# Validator stuff, in process
+## Create-restore wallet
 
 ```bash
 chaind keys add $WALLET
@@ -175,6 +176,7 @@ chaind keys add $WALLET --recover
 ```bash
 chaind keys list
 ```
+## Load variables into the system
 ```bash
 KYVE_WALLET_ADDRESS=$(chaind keys show $WALLET -a)
 ```
@@ -188,9 +190,11 @@ KYVE_VALOPER_ADDRESS=$(chaind keys show $WALLET --bech val -a)
 echo 'export KYVE_VALOPER_ADDRESS='${KYVE_VALOPER_ADDRESS} >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
+## Check balance
 ```bash
 chaind query bank balances $KYVE_WALLET_ADDRESS
 ```
+## Register validator
 ```bash
 chaind tx staking create-validator \
   --amount 1000000000tkyve \
