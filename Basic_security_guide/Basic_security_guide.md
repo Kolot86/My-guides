@@ -230,14 +230,14 @@ Start by checking the status of ufw.
 sudo ufw status
 ```
 
-Sets the default to allow outgoing connections, deny all incoming except ssh and 26656. Limit SSH login attempts
+Sets the default to allow outgoing connections, deny all incoming except ssh and 26656(Change if you don’t use standard port). Limit SSH login attempts
 
 ```bash
 sudo ufw default allow outgoing
 sudo ufw default deny incoming
 sudo ufw allow ssh/tcp
 sudo ufw limit ssh/tcp
-sudo ufw allow ${STRIDE_PORT}656,${STRIDE_PORT}660/tcp
+sudo ufw allow 26656,26660/tcp
 sudo ufw enable
 ```
 
