@@ -1,12 +1,12 @@
 # Basic security guide 
 
+## SSH authentication, Create non-root users and basic firewall protection.
+
 ## OBS! If it’s the first time you making SSH keys authentication. I strongly advise you to try it on an empty server, which one you can reboot in case if you did something wrong! 
 
 Hello,
 
 This is a basic security guide that every beginner validator should know and use as their first layer of security.
-
-This guide is for complete beginners  and it’s just my adaptation of the guide from digital ocean, with a little extra info from me. https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04#step-3-authenticating-to-your-ubuntu-server-using-ssh-keys
 
 Feel free to use the original. 
 
@@ -219,9 +219,35 @@ PasswordAuthentication no
 
 To actually activate these changes, we need to restart the sshd service:
 
-```bash
+Basic Firewall security
 sudo systemctl restart ssh
 ```
 
+### Basic Firewall security
+
+```bash
+Start by checking the status of ufw.
+sudo ufw status
+```
+
+Sets the default to allow outgoing connections, deny all incoming except ssh and 26656. Limit SSH login attempts
+
+```bash
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw allow ssh/tcp
+sudo ufw limit ssh/tcp
+sudo ufw allow ${STRIDE_PORT}656,${STRIDE_PORT}660/tcp
+sudo ufw enable
+```
+
+
 Congratulation! 
 You can feel more secure from now on.
+
+### Sources
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04#step-3-authenticating-to-your-ubuntu-server-using-ssh-keys
+
+https://github.com/kj89
+
