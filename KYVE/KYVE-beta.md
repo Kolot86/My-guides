@@ -55,7 +55,7 @@ chaind config node tcp://localhost:${KYVE_PORT}657
 ```
 ## For your own risk 
 ```bash
-chaind config keyring-backend file
+chaind config keyring-backend test
 ```
 
 ## Init app
