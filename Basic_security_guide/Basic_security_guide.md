@@ -8,8 +8,6 @@ Hello,
 
 This is a basic security guide that every beginner validator should know and use as their first layer of security.
 
-Feel free to use the original. 
-
 First, we begin to learn about SSH, or secure shell. It is an encrypted protocol used to administer and communicate with servers. On our server, we are going to use Ubuntu 20.04 for installation.
 
 The first step is to create a key pair on your private computer. To do this, you can use command line interference (like PowerShell for Windows in my case):
