@@ -218,6 +218,7 @@ PasswordAuthentication no
 To actually activate these changes, we need to restart the sshd service:
 
 Basic Firewall security
+```bash
 sudo systemctl restart ssh
 ```
 
