@@ -80,3 +80,6 @@ Write over your Chat ID and Bot token and don’t forget to switch on “Apply o
 
 After it’s finished, your bot should inform you if your nod is down.
 Good luck! 
+
+Official documentation:
+https://github.com/louislam/uptime-kuma
