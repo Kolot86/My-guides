@@ -219,10 +219,10 @@ chaind tx staking create-validator \
   ```
   ## Rewards, Staking, Delegation
   ```bash
-  chaind tx distribution withdraw-rewards $KYVE_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$KYVE_CHAIN_ID
+  chaind tx distribution withdraw-rewards $KYVE_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$KYVE_CHAIN_ID --gas=auto --fees 200000tkyve -y
   ```
   ```bash
-  chaind tx staking delegate $KYVE_VALOPER_ADDRESS 1000000000000tkyve --from=$WALLET --chain-id=$KYVE_CHAIN_ID --gas=auto
+  chaind tx staking delegate $KYVE_VALOPER_ADDRESS 1000000000000tkyve --from=$WALLET --chain-id=$KYVE_CHAIN_ID --gas=auto --fees 200000tkyve -y
   ```
   ## Get list of validators
 ```
