@@ -224,6 +224,10 @@ chaind tx staking create-validator \
   ```bash
   chaind tx staking delegate $KYVE_VALOPER_ADDRESS 1000000000000tkyve --from=$WALLET --chain-id=$KYVE_CHAIN_ID --gas=auto
   ```
+  ## Get list of validators
+```
+chaind q staking validators -oj --limit=3000 | jq '.validators[] | select(.status=="BOND_STATUS_BONDED")' | jq -r '(.tokens|tonumber/pow(10; 6)|floor|tostring) + " \t " + .description.moniker' | sort -gr | nl
+```
   ## Peer list
    ```bash
   curl -sS http://localhost:${KYVE_PORT}657/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}'
