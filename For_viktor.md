@@ -26,7 +26,7 @@ NODENAME=Do_not_copypaste
 ```
 ## Make your custom ports. You can chose from 10 to 65
 ```bash
-OKP4_PORT=53
+OKP4_PORT=23
 ```
 ## Save and import variables
 
@@ -302,28 +302,10 @@ sed -i '/OKP4_/d' ~/.bash_profile
 ```
 ## ufw
 ```
-sudo ufw default allow outgoing
-sudo ufw default deny incoming
-sudo ufw allow ssh/tcp
-sudo ufw limit ssh/tcp
-sudo ufw allow ${OKP4_PORT}656,${OKP4_PORT}660/tcp
-sudo ufw allow ${STRIDE_PORT}656,${STRIDE_PORT}660/tcp
-sudo ufw allow ${KYVE_PORT}656,${KYVE_PORT}660/tcp
-sudo ufw enable
+
 ```
 ```
 sudo ufw disable
 ```
-## Update 
-```bash
-sudo systemctl stop okp4d
-cd $HOME && rm -rf OKP4
-git clone https://github.com/OKP4-network/OKP4
-cd OKP4
-git fetch 
-git checkout v1.2.0
-make install
-cd $HOME/go/bin/
-cp okp4d $HOME/.okp4d/cosmovisor/genesis/bin/okp4d
-sudo systemctl restart okp4d && sudo journalctl -u okp4d -f -o cat
-```
+
+
