@@ -52,7 +52,7 @@ chmod +x $(which okp4d)
 ```bash
 cd $HOME
 sudo rm -rf okp4d-2.2.0-linux-amd64.tar.gz
-```bash
+```
 
 
 ## Config app
