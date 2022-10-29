@@ -73,7 +73,7 @@ sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persi
 ## Genesis
 
 ```bash
-rm $HOME/.kyve/config/genesis.json
+sudo rm $HOME/.kyve/config/genesis.json
 wget https://nc2.breithecker.de/s/z3bDsQk8D6snyWA/download/genesis-v0.7.0-beta.json
 mv genesis-v0.7.0-beta.json ~/.kyve/config/genesis.json
 ```
