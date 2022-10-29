@@ -45,7 +45,7 @@ source $HOME/.bash_profile
 cd $HOME
 wget https://nc2.breithecker.de/s/BY4Lzj8TAQzgJZm/download/chain_linux_amd64.tar.gz
 tar -xvzf chain_linux_amd64.tar.gz
-chmod +x chaind && mv ./chaind /usr/local/bin/chaind
+sudo chmod +x chaind && sudo mv ./chaind /usr/local/bin/chaind
 ```
 ## Config app
 
