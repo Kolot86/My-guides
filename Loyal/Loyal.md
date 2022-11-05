@@ -53,9 +53,6 @@ sudo rm -rf loyal_v0.25.1_linux_amd64.tar.gz
 loyald config chain-id $LOYAL_CHAIN_ID
 loyald config node tcp://localhost:${LOYAL_PORT}657
 ```
-## For your own risk 
-```bash
-loyald config keyring-bac
 ## Seeds and peers
 
 ```bash
