@@ -212,7 +212,7 @@ loyald tx bank send $WALLET <wallet> 1000000ulyl --gas=200000 --fees 500ulyl -y
   
   ## Voting
   ```bash
-  loyald tx gov vote 1 yes --from $WALLET --chain-id=$LOYAL_CHAIN_ID --fees 250ulyl -y
+  loyald tx gov vote 1 yes --from $WALLET --chain-id=$LOYAL_CHAIN_ID --gas=200000 --fees 500ulyl
 ### Commands
   ```bash
   sudo journalctl -fu loyald -o cat
@@ -225,7 +225,7 @@ loyald tx bank send $WALLET <wallet> 1000000ulyl --gas=200000 --fees 500ulyl -y
   ```
   Unjail
   ```bash
-  loyald tx slashing unjail --from $WALLET --chain-id $LOYAL_CHAIN_ID --gas=200000 --fees 250ulyl -y
+  loyald tx slashing unjail --from $WALLET --chain-id $LOYAL_CHAIN_ID --gas=200000 --fees 500ulyl
   ```
   ```bash
   
