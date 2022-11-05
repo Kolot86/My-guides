@@ -237,6 +237,6 @@ sudo systemctl disable loyald
 sudo rm /etc/systemd/system/loyald* -rf
 sudo rm $(which loyald) -rf
 sudo rm $HOME/.loyal* -rf
-sudo rm $HOME/LOYAL -rf
+sudo rm $HOME/loyal -rf
 sed -i '/LOYAL_/d' ~/.bash_profile
 ```
