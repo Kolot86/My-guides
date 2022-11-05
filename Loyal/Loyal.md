@@ -53,6 +53,12 @@ sudo rm -rf loyal_v0.25.1_linux_amd64.tar.gz
 loyald config chain-id $LOYAL_CHAIN_ID
 loyald config node tcp://localhost:${LOYAL_PORT}657
 ```
+## Init app
+
+```bash
+loyald init $NODENAME --chain-id $LOYAL_CHAIN_ID
+```
+
 ## Seeds and peers
 
 ```bash
