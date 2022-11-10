@@ -254,7 +254,7 @@ chaind tx gov vote 27 yes --from=$WALLET --gas=200000 --fees 200000tkyve -y
   ```
   Unjail
   ```bash
-  chaind tx slashing unjail --from $WALLET --chain-id $KYVE_CHAIN_ID --gas=auto 
+  chaind tx slashing unjail --from $WALLET --chain-id $KYVE_CHAIN_ID --gas=200000 --fees 200000tkyve -y
   ```
   ```bash
   
