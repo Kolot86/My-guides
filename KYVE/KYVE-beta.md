@@ -44,6 +44,7 @@ cd $HOME
 wget https://nc2.breithecker.de/s/BY4Lzj8TAQzgJZm/download/chain_linux_amd64.tar.gz
 tar -xvzf chain_linux_amd64.tar.gz
 sudo chmod +x chaind && sudo mv ./chaind /usr/local/bin/chaind
+sudo rm -rf chain_linux_amd64.tar.gz
 ```
 ## Config app
 
