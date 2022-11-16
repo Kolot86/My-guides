@@ -258,6 +258,7 @@ hermes create connection --a-chain quark-1 --b-chain theta-testnet-001
 ```
 
 ```bash
+#тоже скорее всего не нужно, но оставил пока
 sudo tee /etc/systemd/system/hermesd.service > /dev/null <<EOF
 [Unit]
 Description=hermes
@@ -277,7 +278,7 @@ EOF
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable hermesd
-sudo systemctl restart hermesd && journalctl -u hermesd -f -o cat
+sudo systemctl restart hermesd && journalctl -u hermesd -f -o cat #запускать пока не нужно но оставлю 
 ```
 ```bash
 sudo systemctl stop hermesd
