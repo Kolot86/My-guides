@@ -225,32 +225,44 @@ hermes create connection --a-chain quark-1 --b-chain uni-5
 ```
 # Save example
 ```bash
-2022-11-16T17:54:11.563400Z  INFO ThreadId(01) 🥂 theta-testnet-001 => OpenTryConnection(
-    OpenTry(
-        Attributes {
-            height: Height {
-                revision: 0,
-                height: 13156851,
+SUCCESS Connection { #Если есть success значит соединение создано
+    delay_period: 0ns,
+    a_side: ConnectionSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "quark-1",
+                version: 1,
             },
-            connection_id: Some(
-                ConnectionId(
-                    "connection-1009",
-                ),
-            ),
-            client_id: ClientId(
-                "07-tendermint-1133",
-            ),
-            counterparty_connection_id: Some(
-                ConnectionId(
-                    "connection-18", #это сохранить 
-                ),
-            ),
-            counterparty_client_id: ClientId(
-                "07-tendermint-38",
-            ),
+            runtime_sender: Sender { .. },
         },
-    ),
-)
+        client_id: ClientId(
+            "07-tendermint-59",
+        ),
+        connection_id: Some(
+            ConnectionId(
+                "connection-30",
+            ),
+        ),
+    },
+    b_side: ConnectionSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "theta-testnet-001",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1140",
+        ),
+        connection_id: Some(
+            ConnectionId(
+                "connection-1061",
+            ),
+        ),
+    },
+}
+
 
 ```
 ```bash
