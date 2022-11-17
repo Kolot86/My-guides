@@ -240,7 +240,7 @@ SUCCESS Connection { #Если есть success значит соединени�
         ),
         connection_id: Some(
             ConnectionId(
-                "connection-30",
+                "connection-30", #значение которое нам нужно
             ),
         ),
     },
