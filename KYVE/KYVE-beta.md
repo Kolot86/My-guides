@@ -234,7 +234,7 @@ chaind q gov proposals
 ```
 #### Voite
 ```
-chaind tx gov vote 27 yes --from=$WALLET --gas=200000 --fees 200000tkyve -y
+chaind tx gov vote 27 yes --from=$WALLET --chain-id $KYVE_CHAIN_ID --gas=200000 --fees 200000tkyve -y
 ```
 
   ## Peer list
