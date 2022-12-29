@@ -6,7 +6,10 @@
 
 Here I going to explain how we can create a snapshot for OKP4 node.
 
-Why a snapshot and not a state sync? OKP4 has a CosmWasm smart contract implementation and if you start your node from state sync, then you have the risk that it’s going to crash. It can happen because of a request to some old contract in the wasm folder. Your wasm folder is empty if you start from the state sync. 
+Why a snapshot and not a state sync?
+
+OKP4 has a CosmWasm smart contract implementation and if you start your node from state sync, then you have the risk that it’s going to crash. It can happen because of a request to some old contract in the wasm folder and if you start from the state sync your wasm folder is empty. You need to download wasm separately or it’s better to use a snapshot – download the database with wasm folder.  
+
 
 First, we need to have a fully synced OKP4 node, to install it you can use the *[official documentation]( https://docs.okp4.network/nodes/introduction)*.
 
