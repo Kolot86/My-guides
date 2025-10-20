@@ -229,7 +229,7 @@ Start by checking the status of ufw.
 sudo ufw status
 ```
 
-Sets the default to allow outgoing connections, deny all incoming except ssh and 26656(Change if you don’t use standard port). Limit SSH login attempts
+Sets the default to allow outgoing connections, deny all incoming except ssh and 26656(Change if you don’t use standard port). Limit SSH login attempts.
 
 ```bash
 sudo ufw default allow outgoing
